@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "digital-7";
+    src: url("./assets/digital-7.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "digital-7", monospace;
+    background: radial-gradient(ellipse at center, black, grey);
+    overflow: hidden;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(120, 50%, 55%);
+    border-radius: 40px;
+    box-shadow: inset 10px 10px 40px lightgreen;
+}
+
+.hand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 9em;
+    min-width: 200px;
+    min-height: 200px;
+    text-shadow: 1px 1px 1px black,
+        1px 1px 50px green;
+}
+
+.hours,
+.minutes,
+.seconds {
+    box-shadow: 1px 1px 20px;
+    border-radius: 30px;
+}
