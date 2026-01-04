@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.switch {
+  --element-width: 600px;
+  width: var(--element-width);
+  height: calc(var(--element-width)/2);
+  background: #ccc;
+  border-radius: 300px;
+  cursor: pointer;
+  position: relative; 
+  transition: background-color 0.3s;
+}
+
+.knob {
+  width: 50%;
+  height: inherit;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  all: 10px;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px grey;
+}
+
+.switch.on {
+  background: #2ecc71;
+}
+
+.switch.on .knob {
+  transform: translateX(calc(var(--element-width)/2));
+}
